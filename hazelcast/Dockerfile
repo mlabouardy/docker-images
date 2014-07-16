@@ -9,6 +9,7 @@ RUN mv hazelcast* /opt/hazelcast
 
 ENV HAZELCAST_HOME /opt/hazelcast
 
+WORKDIR /opt/hazelcast/bin
 CMD ${HAZELCAST_HOME}/bin/server.sh
 
 EXPOSE 5701
