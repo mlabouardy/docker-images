@@ -1,7 +1,7 @@
 FROM dockerfile/java
 MAINTAINER Fawad Halim <fawad@fawad.net>
 
-RUN cd /tmp
+WORKDIR /tmp
 RUN wget -O gridgain.zip http://www.gridgain.org/media/gridgain-platform-os-6.0.2-nix.zip
 RUN unzip gridgain.zip
 RUN rm gridgain.zip
